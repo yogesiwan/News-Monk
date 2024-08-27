@@ -1,0 +1,71 @@
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust based on your layout */
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .card {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Adjust based on content */
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .card-img-top {
+    height: 10rem;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    background: #fff;
+  }
+  
+  .card-title {
+    height: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+    margin-bottom: 1rem; /* Space before the button */
+  }
+  
+  .card-footer {
+    padding: 0.5rem 1rem;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    text-align: center; /* Center footer text */
+  }
+  
+  .btn-primary {
+    width: 100%; /* Full width to fill card body */
+    text-align: center; /* Center button text */
+  }
